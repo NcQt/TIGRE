@@ -122,7 +122,7 @@ __global__ void kernelPixelDetector_parallel( Geometry geo,
     int pixelU = x;
     
     
-    
+    // P pixel,  uvOrigin pixel origin point,  S source point (just for parallel ray) 
     float vectX,vectY,vectZ;
     Point3D P;
     P.x=(uvOrigin.x+pixelU*deltaU.x+pixelV*deltaV.x);
